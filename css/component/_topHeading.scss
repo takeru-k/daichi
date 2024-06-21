@@ -1,0 +1,23 @@
+@use "../setting/setting";
+
+.c-topHeading {
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.c-topHeading__english {
+  text-transform: uppercase;
+  color: setting.$color-main;
+  font-size: clamp(1.5rem, 0.75rem + 1.88vw, 2.25rem);
+  font-family: setting.$font-english;
+  color: setting.$color-main;
+}
+
+.c-topHeading__heading {
+  font-size: clamp(1.25rem, 1.068rem + 0.91vw, 1.75rem);
+  margin-top: 16px;
+}
+
+.c-topHeading-center {
+  text-align: center;
+}

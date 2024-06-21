@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>合同会社大地興業</title>
+
+    <!-- slickのCSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="l-header js-header">
+      <div class="l-header__inner">
+        <h1 class="l-header__logo">
+          <a href="index.html">合同会社大地興業</a>
+        </h1>
+        <!-- /.l-header__logo -->
+
+        <button
+          type="button"
+          class="c-hamburger js-btn"
+          aria-label="Navigation"
+        >
+          <span class="c-hamburger__line"></span
+          ><!-- /.c-hamburger__line --></button
+        ><!-- /.c-hamburger -->
+      </div>
+      <!-- /.l-header__inner -->
+
+      <nav class="l-header__nav">
+        <ul class="l-header__menu">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="logging.html">伐木事業</a></li>
+          <li><a href="engineer.html">土木事業</a></li>
+          <li><a href="gallery.html">作業の様子</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+        <!-- /.l-header__menu -->
+      </nav>
+    </header>
+    <!-- /.l-header -->
+    <main>
+      <div class="l-pageHeader">
+        <div class="l-pageHeader__img">
+          <img src="images/top/mv.jpg" alt="" />
+        </div>
+
+        <!-- /.l-pageHeader__img -->
+        <h1 class="l-pageHeader__title">お問い合わせ</h1>
+        <!-- /.l-pageHeader__title -->
+      </div>
+      <!-- /.l-pageHeader -->
+
+      <div class="p-contact">
+        <div class="l-inner">
+          <div class="p-contact__body">
+            <div class="p-contact__lead">
+              <p>
+                ご質問・ご相談、お見積もりなど、お気軽にお問い合わせください。
+              </p>
+              <p>お急ぎの方はお電話ください。</p>
+            </div>
+            <!-- /.p-contact__lead -->
+
+            <div class="p-contact__tel">
+              <a href="tel:"><small>tel</small>012-345-6789</a>
+              <span>受付時間: 9:00〜17:30</span>
+            </div>
+            <!-- /.p-contact__tel -->
+
+            <div class="p-contact__lead">
+              <p>
+                メールでのお問い合わせは、下記フォームへ必要事項をご記入いただき送信してください。
+              </p>
+            </div>
+            <!-- /.p-contact__lead -->
+
+            <div class="p-contact__form">
+              <div class="c-form">
+                <table class="contactTable">
+                  <tbody>
+                    <tr>
+                      <th>
+                        <label for="company" class="inputLabel">お名前</label>
+                      </th>
+                      <td>
+                        <div class="inputField">
+                          <input type="text" id="name" name="name" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>
+                        <label for="company" class="inputLabel"
+                          >会社/事業所名</label
+                        ><span class="require">必須</span>
+                      </th>
+                      <td>
+                        <div class="inputField">
+                          <input type="text" id="company" name="company" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>
+                        <label for="email" class="inputLabel"
+                          >メールアドレス<span class="require">必須</span>
+                        </label>
+                      </th>
+                      <td>
+                        <div class="inputField">
+                          <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                          />
+                          <p class="errorText">
+                            正しい形式のメールアドレスを入力してください。
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>
+                        <label for="email" class="inputLabel"
+                          >電話番号
+                          <span class="require">必須</span>
+                        </label>
+                      </th>
+                      <td>
+                        <div class="inputField">
+                          <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                          />
+                          <p class="errorText">
+                            正しい形式のメールアドレスを入力してください。
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th>
+                        <label for="contact_msg" class="inputLabel"
+                          >お問合せ内容
+                        </label>
+                      </th>
+                      <td>
+                        <div class="inputField">
+                          <textarea
+                            name="contact_msg"
+                            id="contact_msg"
+                            cols="30"
+                            rows="10"
+                            required
+                          ></textarea>
+                          <p class="errorText">
+                            お問合せ内容を入力してください。
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="privacyBox">
+                  <p>
+                    <a href="" target="_blank" rel="noopener noreferrer"
+                      >プライバシーポリシー</a
+                    >に同意して、送信してください。
+                  </p>
+                </div>
+
+                <div class="formBtns">
+                  <button class="buttonAction">この内容で送信する</button>
+                </div>
+              </div>
+              <!-- /.c-form -->
+            </div>
+            <!-- /.p-contact__form -->
+          </div>
+          <!-- /.p-contact__body -->
+        </div>
+        <!-- /.l-inner -->
+      </div>
+      <!-- /.p-contact -->
+    </main>
+
+    <footer class="l-footer">
+      <div class="l-footer__inner">
+        <div class="c-cta">
+          <div class="c-cta__texts">
+            <h2 class="c-cta__heading">お問い合わせ</h2>
+            <!-- /.c-cta__heading -->
+            <p class="c-cta__text">
+              お仕事のご依頼・ご相談やお見積もりなど、お気軽にお問い合わせください。
+            </p>
+            <!-- /.c-cta__text -->
+          </div>
+          <!-- /.c-cta__texts -->
+
+          <div class="c-cta__button">
+            <a href="contact.html" class="c-cta__button-link">まずは相談する</a
+            ><!-- /.c-button__link-white -->
+          </div>
+          <!-- /.c-button -->
+        </div>
+        <!-- /.c-cta -->
+
+        <div class="l-footer__contents">
+          <div class="l-footer__info">
+            <h1 class="l-footer__logo">合同会社大地興業</h1>
+            <!-- /.l-footer__logo -->
+            <p class="l-footer__address">
+              〒038-3831<br />青森県南津軽郡藤崎町大字中野目字早稲田東138-4
+            </p>
+            <!-- /.l-footer__address -->
+          </div>
+          <!-- /.l-footer__info -->
+
+          <nav class="l-footer__nav">
+            <ul class="l-footer__menu">
+              <li class="l-footer__item"><a href="index.html">ホーム</a></li>
+              <!-- /.l-footer__item -->
+              <li class="l-footer__item">
+                <a href="company.html">会社概要</a>
+              </li>
+              <!-- /.l-footer__item -->
+              <li class="l-footer__item">
+                <a href="logging.html">伐木事業</a>
+              </li>
+              <!-- /.l-footer__item -->
+              <li class="l-footer__item">
+                <a href="engineer.html">土木事業</a>
+              </li>
+              <!-- /.l-footer__item -->
+              <li class="l-footer__item">
+                <a href="がっぇry.html">作業の様子</a>
+              </li>
+              <!-- /.l-footer__item -->
+              <li class="l-footer__item">
+                <a href="contact.html">お問い合わせ</a>
+              </li>
+              <!-- /.l-footer__item -->
+            </ul>
+            <!-- /.l-footer__menu -->
+          </nav>
+          <!-- /.l-footer__nav -->
+        </div>
+        <!-- /.l-footer__contents -->
+
+        <small class="l-footer__copy">&copy; 合同会社大地興業</small>
+      </div>
+      <!-- /.l-footer__inner -->
+    </footer>
+    <!-- /.l-footer -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+@use "../setting/setting";
+
+.p-topAbout {
+  padding: 64px 0;
+  position: relative;
+}
+
+.p-topAbout__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.p-topAbout__image {
+  position: relative;
+  img {
+    aspect-ratio: 3 / 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-topAbout__wrapper {
+    flex-direction: row;
+    gap: 64px;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .p-topAbout {
+    padding: 108px 0;
+  }
+}

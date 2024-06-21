@@ -1,0 +1,36 @@
+@use "../setting/setting";
+
+.c-imgLine {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .c-imgLine {
+    display: block;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    transform-origin: 0 0;
+    font-family: setting.$font-english;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 260px;
+      height: 1px;
+      background: #0f4556;
+      position: absolute;
+      top: 50%;
+      left: 0;
+    }
+
+    span {
+      display: block;
+      margin-left: 280px;
+      color: #0f4556;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}

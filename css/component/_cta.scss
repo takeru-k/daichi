@@ -1,0 +1,79 @@
+@use "../setting/setting";
+
+.c-cta {
+  color: #fff;
+  border-bottom: 1px solid #999;
+  padding-bottom: 88px;
+}
+
+.c-cta__heading {
+  font-weight: normal;
+  font-size: clamp(1.25rem, 1.068rem + 0.91vw, 1.75rem);
+}
+
+.c-cta__text {
+  margin-top: clamp(0.75rem, 0.25rem + 1.25vw, 1.25rem);
+}
+
+@media (min-width: 1024px) {
+  .c-cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 64px;
+  }
+}
+
+.c-cta__button {
+  position: relative;
+  margin-top: clamp(1.5rem, 0.5rem + 2.5vw, 2.5rem);
+}
+
+.c-cta__button-link {
+  padding-bottom: 16px;
+  background: #fff;
+  color: #333;
+  text-align: center;
+  padding: 12px 16px;
+  letter-spacing: 1.6px;
+  margin: 24px auto 0;
+  display: block;
+  transition: 0.4s;
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  font-weight: bold;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    top: calc(50% - 16px);
+    right: 0%;
+    background: url(../images/common/arrow-link.png) no-repeat center
+      center/contain;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: -1px;
+    left: 0;
+    width: 50px;
+    height: 1px;
+    background: #242424;
+    transition: all 0.5s ease;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .c-cta__button-link {
+    width: 240px;
+  }
+}

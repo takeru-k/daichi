@@ -1,0 +1,52 @@
+@use "../setting/setting";
+
+.c-flex {
+  margin-top: 40px;
+}
+
+.c-flex__item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.c-flex__heading-heading {
+  font-size: clamp(1.125rem, 0.989rem + 0.68vw, 1.5rem);
+}
+
+.c-flex__texts {
+  margin-top: 16px;
+}
+
+.c-flex__img {
+  img {
+    min-height: 220px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  .c-flex {
+    margin-top: 88px;
+  }
+  .c-flex__item {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 88px;
+    gap: 64px;
+  }
+
+  .c-flex__item:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+
+  .c-flex__left {
+    width: 50%;
+  }
+
+  .c-flex__image {
+    width: 50%;
+  }
+}
