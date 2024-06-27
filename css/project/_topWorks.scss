@@ -4,6 +4,11 @@
 
 .slider {
   padding: 24px 0;
+
+  img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
 }
 
 @media (min-width: 1024px) {
